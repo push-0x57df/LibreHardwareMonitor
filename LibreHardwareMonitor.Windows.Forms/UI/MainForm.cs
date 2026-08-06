@@ -443,14 +443,16 @@ public sealed partial class MainForm : Form
         };
 
         _smartUpdateCycle = new UserRadioGroup("smartUpdateCycle",
-                                               4,
+                                               5,
                                                new[]
                                                {
                                                    smartUpdateFollowUpdateIntervalMenuItem,
                                                    smartUpdate10CyclesMenuItem,
                                                    smartUpdate25CyclesMenuItem,
                                                    smartUpdate50CyclesMenuItem,
-                                                   smartUpdate100CyclesMenuItem
+                                                   smartUpdate100CyclesMenuItem,
+                                                   smartUpdate500CyclesMenuItem,
+                                                   smartUpdate1000CyclesMenuItem
                                                },
                                                _settings);
 
@@ -462,6 +464,8 @@ public sealed partial class MainForm : Form
                 2 => 25,
                 3 => 50,
                 4 => 100,
+                5 => 500,
+                6 => 1000,
                 _ => 1
             };
         };
