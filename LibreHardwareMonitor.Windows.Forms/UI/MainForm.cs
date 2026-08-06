@@ -443,7 +443,7 @@ public sealed partial class MainForm : Form
         };
 
         _smartUpdateCycle = new UserRadioGroup("smartUpdateCycle",
-                                               0,
+                                               4,
                                                new[]
                                                {
                                                    smartUpdateFollowUpdateIntervalMenuItem,
